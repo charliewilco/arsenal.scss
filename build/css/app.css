@@ -1,0 +1,17 @@
+.app--header {
+  padding: 1rem;
+  background: #d04d36;
+  color: white; }
+
+.app--intro {
+  width: 100%;
+  background: rgba(208, 77, 54, 0.625);
+  padding: 1rem; }
+  .app--intro::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .app--intro .col3 {
+    width: 33.33333%;
+    padding: 2rem;
+    float: left; }

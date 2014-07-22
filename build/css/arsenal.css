@@ -330,6 +330,7 @@ html {
   background: rgba(84, 134, 164, 0.125);
   color: #2a4150;
   font-style: italic;
+  font-size: 1.25rem;
   margin: 1rem 0.5rem;
   border-left: 0.5rem solid #4d7893; }
   .warning--red {
