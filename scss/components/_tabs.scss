@@ -1,32 +1,41 @@
 .tabs {
     list-style: none inside;
     padding: .25rem 0;
-    margin-bottom: -4px;
+    margin-bottom: -6px;
     z-index: 5;
     li {
-        padding: 1rem 2rem;
-        border: 1px solid gray;
+        padding: 1.125rem 2.5rem 1rem;
+        border: 1px solid $gray;
         border-bottom: none;
-        border-radius: .5rem .5rem 0 0;
-        background: rgba(gray, .5);
+        background: rgba(gray, .375);
+        margin-right: .5rem;
+        border-radius: .375rem .375rem 0 0;
         a {
             text-align: center;
             text-decoration: none;
-            color: gray;
+            color: rgba(gray, .75);
         }
-        display: inline-block;
+        display: block;
+        float: left;
         font-size: 1.125rem;
         font-weight: bold;
-        margin: 0;
+    }
+    &::after {
+        content: "";
+        clear: both;
+        display: block;
     }
     &--link-active {
         background: white !important;
+        a {
+            color: $red !important;
+        }
     }
     &--content {
         z-index: 4;
         padding: 2rem;
         font-size: 1.25rem;
-        border: 1px solid gray;
+        border: 1px solid $gray;
     }
     &--active {
     }

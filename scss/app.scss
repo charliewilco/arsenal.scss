@@ -2,23 +2,61 @@
 @import "base/mixins";
 
 .app--header {
-    padding: 1rem;
-    background: $red;
-    color: white;
+    padding: 1.5rem;
+    border-top: .5rem solid $red;
+    fill: $red;
+    background: $offwhite;
+    text-align: center;
+    svg {
+        max-width: 12.5rem;
+        max-height: 100%;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    .container {
+        max-width: 93%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    h1 {
+        display: none;
+    }
 }
 
 .app--intro {
     width: 100%;
-    background: rgba($red, .625);
+    background: rgba($red, .75);
     padding: 1rem;
+    color: white;
     &::after {
         content: "";
         clear: both;
         display: table;
     }
+    .first {
+        @include respond-to(medium-screens) { width: 100%; }
+    }
     .col3 {
         width: percentage(1/3);
         padding: 2rem;
         float: left;
+        @include respond-to(medium-screens) { width: 50%; }
+        @include respond-to(handhelds) { width: 100%; }
+    }
+    p {
+        font-family: $serif;
+    }
+}
+
+.section--heading {
+    color: $text;
+    &::before {
+        content: "";
+        width: 7rem;
+        height: .25rem;
+        background: $dark-red;
+        display: block;
+        margin-bottom: .5rem;
     }
 }

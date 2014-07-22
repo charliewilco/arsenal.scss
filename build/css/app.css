@@ -1,17 +1,53 @@
 .app--header {
-  padding: 1rem;
-  background: #d04d36;
-  color: white; }
+  padding: 1.5rem;
+  border-top: 0.5rem solid #d04d36;
+  fill: #d04d36;
+  background: #fffcfc;
+  text-align: center; }
+  .app--header svg {
+    max-width: 12.5rem;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+    float: left; }
+  .app--header .container {
+    max-width: 93%;
+    padding: 0;
+    margin: 0 auto; }
+  .app--header h1 {
+    display: none; }
 
 .app--intro {
   width: 100%;
-  background: rgba(208, 77, 54, 0.625);
-  padding: 1rem; }
+  background: rgba(208, 77, 54, 0.75);
+  padding: 1rem;
+  color: white; }
   .app--intro::after {
     content: "";
     clear: both;
     display: table; }
+  @media only screen and (min-width: 32.25rem) and (max-width: 56.75rem) {
+    .app--intro .first {
+      width: 100%; } }
   .app--intro .col3 {
     width: 33.33333%;
     padding: 2rem;
     float: left; }
+    @media only screen and (min-width: 32.25rem) and (max-width: 56.75rem) {
+      .app--intro .col3 {
+        width: 50%; } }
+    @media only screen and (max-width: 31.25rem) {
+      .app--intro .col3 {
+        width: 100%; } }
+  .app--intro p {
+    font-family: "Georgia", Georgia, serif; }
+
+.section--heading {
+  color: #484848; }
+  .section--heading::before {
+    content: "";
+    width: 7rem;
+    height: 0.25rem;
+    background: #c6432c;
+    display: block;
+    margin-bottom: 0.5rem; }

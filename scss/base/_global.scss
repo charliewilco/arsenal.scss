@@ -4,11 +4,16 @@
   box-sizing: border-box;
 }
 html {
-  font: 400 100%/1.4 "source-sans-pro", sans-serif;
+  font: 400 100%/1.4 $sans-serif;
   background: $offwhite;
 }
 .container {
   margin: .5rem auto;
   max-width: 68rem;
   padding: .5rem;
+  &::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
 }
