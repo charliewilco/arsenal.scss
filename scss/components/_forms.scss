@@ -1,0 +1,18 @@
+.newform {
+    input[type="text"],input[type="email"] {
+        border: 1px solid;
+        padding: .5rem .25rem;
+        &:focus {
+            outline: none;
+            background: $blue;
+            color: $offwhite;
+        }
+    }
+    input[type="radio"] {
+        // -webkit-appearance: none;
+        // background: $blue;
+    }
+    input[type="submit"] {
+        @extend .btn;
+    }
+}

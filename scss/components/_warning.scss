@@ -1,0 +1,24 @@
+.warning {
+    width: 100%;
+    padding: 2rem 1rem;
+    background: rgba($blue, .125);
+    color: darken($dark-blue, 20%);
+    font-style: italic;
+    margin: 1rem .5rem;
+    border-left: .5rem solid $dark-blue;
+    &--red {
+        background: rgba($red, .125);
+        border-color: $dark-red;
+        color: darken($dark-red, 20%);
+    }
+    &--yellow {
+        background: rgba($yellow, .125);
+        border-color: $dark-yellow;
+        color: darken($dark-yellow, 20%);
+    }
+    &--green {
+        background: rgba($green, .125);
+        border-color: $dark-green;
+        color: darken($dark-green, 20%);
+    }
+}

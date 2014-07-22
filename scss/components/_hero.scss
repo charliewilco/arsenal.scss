@@ -1,0 +1,20 @@
+.hero {
+    background: url('../img/taxis_hero.jpg') no-repeat center bottom / cover;
+    color: $black;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    min-height: 25rem;
+    width: 100%;
+    h1 {
+        font-weight: 700;
+        font-size: 4.5rem;
+        letter-spacing: -1px;
+        // text-shadow: 0 0 1rem rgba($black, 1);
+     }
+     .container {
+         background: rgba($offwhite, .875);
+         max-width: 40rem;
+         border-radius: 1rem;
+         padding: 3rem 1rem;
+     }
+}
