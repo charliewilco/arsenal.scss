@@ -34,7 +34,7 @@ gulp.task('watch', function(){
 });
 
 gulp.task('connect', function() {
-    connect.server({livereload: true, open: { browser:'Google Chrome'}});
+    connect.server({livereload: true});
 });
 
 gulp.task('default', ['scripts', 'styles', 'watch', 'connect']);
