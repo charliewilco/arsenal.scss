@@ -298,22 +298,31 @@ html {
     padding: 3rem 1rem; }
 
 .tabs {
-  list-style: none inside; }
+  list-style: none inside;
+  padding: 0.25rem 0;
+  margin-bottom: -4px;
+  z-index: 5; }
   .tabs li {
+    padding: 1rem 2rem;
+    border: 1px solid gray;
+    border-bottom: none;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background: rgba(128, 128, 128, 0.5);
     display: inline-block;
     font-size: 1.125rem;
     font-weight: bold;
-    padding: 1rem 2rem;
-    border: 1px solid gray;
-    border-bottom: none; }
+    margin: 0; }
     .tabs li a {
       text-align: center;
-      text-decoration: none; }
+      text-decoration: none;
+      color: gray; }
+  .tabs--link-active {
+    background: white !important; }
   .tabs--content {
-    padding: 1rem;
-    font-size: 1.25rem; }
-  .tabs--active {
-    background: #ffba00; }
+    z-index: 4;
+    padding: 2rem;
+    font-size: 1.25rem;
+    border: 1px solid gray; }
 
 .warning {
   width: 100%;
