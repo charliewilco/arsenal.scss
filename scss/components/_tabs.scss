@@ -1,0 +1,23 @@
+.tabs {
+    list-style: none inside;
+    li {
+        a {
+            text-align: center;
+            text-decoration: none;
+        }
+        display: inline-block;
+        font-size: 1.125rem;
+        font-weight: bold;
+        padding: 1rem 2rem;
+        border: 1px solid gray;
+        border-bottom: none;
+
+    }
+    &--content {
+        padding: 1rem;
+        font-size: 1.25rem;
+    }
+    &--active {
+        background: $yellow;
+    }
+}

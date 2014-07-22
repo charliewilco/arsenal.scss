@@ -281,7 +281,7 @@ html {
       background: #f5b300; }
 
 .hero {
-  background: url('../img/taxis_hero.jpg') no-repeat center bottom/cover;
+  background: url('../../img/taxis_hero.jpg') no-repeat center bottom/cover;
   color: #202020;
   padding: 2.5rem 1rem;
   text-align: center;
@@ -296,6 +296,24 @@ html {
     max-width: 40rem;
     border-radius: 1rem;
     padding: 3rem 1rem; }
+
+.tabs {
+  list-style: none inside; }
+  .tabs li {
+    display: inline-block;
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: 1px solid gray;
+    border-bottom: none; }
+    .tabs li a {
+      text-align: center;
+      text-decoration: none; }
+  .tabs--content {
+    padding: 1rem;
+    font-size: 1.25rem; }
+  .tabs--active {
+    background: #ffba00; }
 
 .warning {
   width: 100%;

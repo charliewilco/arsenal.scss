@@ -27,10 +27,12 @@
             <h2>Compontents</h2>
             <ul>
                 <li>Buttons</li>
-                <li>Forms</li>
                 <li>Hero Units</li>
                 <li>Tabs</li>
                 <li>Warnings</li>
+                <li>Modals</li>
+                <li>Article Headings</li>
+                <li>Media Objects</li>
             </ul>
         </div>
     </section>
@@ -57,38 +59,21 @@
     <a href="#!" class="btn-alt btn-alt--red">Enough With the Damn Buttons</a>
 </div>
 <div class="container">
-    <h3>Forms</h3>
-    <form id="form_id" class="newform" action="index.html">
-        <div>
-            <label for="name">Text Input:</label>
-            <input type="text" name="name" id="name" placeholder="John Smith" />
-            <label for="name">Email Input:</label>
-            <input type="email" name="name" id="name" placeholder="john.smith@gmail.com" />
-        </div>
-            <label for="radio-choice-1">Choice 1</label>
-            <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" />
-            <label for="radio-choice-2">Choice 2</label>
-            <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2" />
-        <div>
-            <label for="select-choice">Select Dropdown Choice:</label>
-            <select name="select-choice" id="select-choice">
-                <option value="Choice 1">Choice 1</option>
-                <option value="Choice 2">Choice 2</option>
-                <option value="Choice 3">Choice 3</option>
-            </select>
-        </div>
-        <div>
-            <label for="textarea">Textarea:</label>
-            <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
-        </div>
-        <div>
-            <label for="checkbox">Checkbox:</label>
-            <input type="checkbox" name="checkbox" id="checkbox" />
-        </div>
-        <div>
-            <input type="submit" value="Submit" />
-        </div>
-    </form>
+    <h3>Tabs</h3>
+    <ul class='tabs'>
+        <li><a href='#tab1'>Tab 1</a></li>
+        <li><a href='#tab2'>Tab 2</a></li>
+        <li><a href='#tab3'>Tab 3</a></li>
+    </ul>
+    <div class="tabs--content" id='tab1'>
+        <p>Hi, this is the first tab.</p>
+    </div>
+    <div class="tabs--content" id='tab2'>
+        <p>This is the 2nd tab.</p>
+    </div>
+    <div class="tabs--content" id='tab3'>
+        <p>And this is the 3rd tab.</p>
+    </div>
 </div>
 <div class="container">
     <h3>Warnings</h3>
@@ -116,5 +101,7 @@
 <div class="container">
     Looking for Forms or Navigation?
 </div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/build/js/arsenal.js"></script>
 </body>
 </html>
