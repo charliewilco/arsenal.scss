@@ -4,12 +4,14 @@ var gulp         = require('gulp'),
     plumber      = require('gulp-plumber'),
     autoprefixer = require('gulp-autoprefixer'),
     connect      = require('gulp-connect'),
+    concat       = require('gulp-concat'),
     imagemin     = require('gulp-imagemin');
 
 gulp.task('scripts', function(){
     gulp.src('js/*.js')
         .pipe(plumber())
         .pipe(uglify())
+        .pipe(concat('arsenal.min.js'))
         .pipe(gulp.dest('build/js/'))
         .pipe(connect.reload());
 });
@@ -27,6 +29,12 @@ gulp.task('html', function () {
   gulp.src('index.html')
     .pipe(gulp.dest('build/'))
     .pipe(connect.reload());
+});
+
+gulp.task('templates', function() {
+  gulp.src('./lib/*.html')
+    .pipe(swig())
+    .pipe(gulp.dest('./dist/'))
 });
 
 gulp.task('watch', function(){
