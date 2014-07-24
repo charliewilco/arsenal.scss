@@ -1,3 +1,8 @@
+.app--intro::after {
+  content: "";
+  clear: both;
+  display: table; }
+
 .app--header {
   padding: 1.5rem;
   border-top: 0.5rem solid #d04d36;
@@ -22,10 +27,8 @@
   background: rgba(208, 77, 54, 0.75);
   padding: 1rem;
   color: white; }
-  .app--intro::after {
-    content: "";
-    clear: both;
-    display: table; }
+  .app--intro h1, .app--intro h2 {
+    color: #cf4732; }
   @media only screen and (min-width: 32.25rem) and (max-width: 56.75rem) {
     .app--intro .first {
       width: 100%; } }

@@ -1,19 +1,21 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+* {
+    padding: 0;
+    margin: 0;
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 html {
   font: 400 100%/1.4 $sans-serif;
   background: $offwhite;
+  box-sizing: border-box;
 }
 .container {
   margin: .5rem auto;
   max-width: 68rem;
   padding: .5rem;
   &::after {
-      content: "";
-      clear: both;
-      display: table;
+      @extend %clearfix;
   }
 }

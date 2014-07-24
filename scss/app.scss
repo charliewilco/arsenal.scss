@@ -1,5 +1,7 @@
 @import "base/variables";
 @import "base/mixins";
+@import "base/partials";
+
 
 .app--header {
     padding: 1.5rem;
@@ -29,10 +31,11 @@
     background: rgba($red, .75);
     padding: 1rem;
     color: white;
+    h1, h2 {
+        color: darken($red, 1);
+    }
     &::after {
-        content: "";
-        clear: both;
-        display: table;
+        @extend %clearfix;
     }
     .first {
         @include respond-to(medium-screens) { width: 100%; }

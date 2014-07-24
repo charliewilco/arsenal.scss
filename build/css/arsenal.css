@@ -1,3 +1,8 @@
+.container::after {
+  content: "";
+  clear: both;
+  display: table; }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -191,22 +196,22 @@ p {
 
 * {
   padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  margin: 0; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
 
 html {
   font: 400 100%/1.4 "fira-sans", sans-serif;
-  background: #fffcfc; }
+  background: #fffcfc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .container {
   margin: 0.5rem auto;
   max-width: 68rem;
   padding: 0.5rem; }
-  .container::after {
-    content: "";
-    clear: both;
-    display: table; }
 
 .btn {
   text-align: center;
