@@ -6,7 +6,6 @@
 .app--header {
   padding: 1.5rem;
   border-top: 0.5rem solid #d04d36;
-  fill: #d04d36;
   background: #fffcfc;
   text-align: center; }
   .app--header svg {
@@ -14,7 +13,10 @@
     max-height: 100%;
     width: 100%;
     height: auto;
-    float: left; }
+    float: left;
+    fill: #d04d36; }
+    .app--header svg:hover {
+      fill: #632116; }
   .app--header .container {
     max-width: 93%;
     padding: 0;
@@ -31,7 +33,8 @@
     color: #cf4732; }
   @media only screen and (min-width: 32.25rem) and (max-width: 56.75rem) {
     .app--intro .first {
-      width: 100%; } }
+      width: 100% !important;
+      float: none; } }
   .app--intro .col3 {
     width: 33.33333%;
     padding: 2rem;
@@ -49,8 +52,8 @@
   color: #484848; }
   .section--heading::before {
     content: "";
-    width: 7rem;
-    height: 0.25rem;
+    width: 6rem;
+    height: 0.125rem;
     background: #c6432c;
     display: block;
     margin-bottom: 0.5rem; }

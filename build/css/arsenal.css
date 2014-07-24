@@ -317,20 +317,24 @@ html {
 
 .tabs {
   list-style: none inside;
-  padding: 0.25rem 0;
-  margin-bottom: -6px;
+  margin-bottom: -1px;
   z-index: 5; }
   .tabs li {
-    padding: 1.125rem 2.5rem 1rem;
+    padding: 1rem 2.5rem 0.875rem;
     border: 1px solid #ccc;
     border-bottom: none;
     background: rgba(128, 128, 128, 0.375);
     margin-right: 0.5rem;
     border-radius: 0.375rem 0.375rem 0 0;
+    line-height: 1;
+    font-weight: 400;
     display: block;
     float: left;
-    font-size: 1.125rem;
-    font-weight: bold; }
+    font-size: 1.125rem; }
+    @media only screen and (max-width: 31.25rem) {
+      .tabs li {
+        width: 100%;
+        border-radius: 0; } }
     .tabs li a {
       text-align: center;
       text-decoration: none;
