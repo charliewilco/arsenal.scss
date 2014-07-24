@@ -49,11 +49,11 @@
     font-family: "Georgia", Georgia, serif; }
 
 .section--heading {
-  color: #484848; }
+  color: #5486a4; }
   .section--heading::before {
     content: "";
     width: 6rem;
-    height: 0.125rem;
-    background: #c6432c;
+    height: 5px;
+    background: #5486a4;
     display: block;
     margin-bottom: 0.5rem; }

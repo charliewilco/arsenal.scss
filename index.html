@@ -162,6 +162,11 @@
 <div class="container">
     <h3 class="section--heading">Modals</h3>
     <a href="#!" class="btn-alt btn-alt--red">Sign Up for a Thing You Don't Care About -- Modal Example</a>
+    <div class="modal--overlay"></div>
+    <div class="modal--window">
+        <div class="modal--content">No JavaScript Yet!</div>
+        <a href='#' class="modal--close">Close</a>
+    </div>
 </div>
 <div class="container">
     Looking for Forms or Navigation?
@@ -176,5 +181,8 @@
 </footer>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="/js/arsenal.min.js"></script>
+<script charset="utf-8">
+    $('modal--overlay').arsenalModal();
+</script>
 </body>
 </html>

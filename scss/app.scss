@@ -60,12 +60,12 @@
 }
 
 .section--heading {
-    color: $text;
+    color: $blue;
     &::before {
         content: "";
         width: 6rem;
-        height: .125rem;
-        background: $dark-red;
+        height: 5px;
+        background: $blue;
         display: block;
         margin-bottom: .5rem;
     }

@@ -346,12 +346,28 @@ html {
   .tabs--link-active {
     background: white !important; }
     .tabs--link-active a {
-      color: #d04d36 !important; }
+      color: #5486a4 !important; }
   .tabs--content {
     z-index: 4;
     padding: 2rem;
     font-size: 1.25rem;
     border: 1px solid #ccc; }
+
+.modal--window {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  padding: 8px; }
+.modal--content {
+  border-radius: 8px;
+  background: #fff;
+  padding: 20px; }
+.modal--close {
+  position: absolute;
+  display: block;
+  text-indent: -9999px;
+  top: -7px;
+  right: -7px; }
 
 .warning {
   width: 100%;
