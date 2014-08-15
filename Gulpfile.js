@@ -34,7 +34,7 @@ gulp.task('html', function () {
 gulp.task('templates', function() {
   gulp.src('./lib/*.html')
     .pipe(swig())
-    .pipe(gulp.dest('./dist/'))
+    .pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('watch', function(){
