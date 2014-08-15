@@ -5,9 +5,9 @@
 
 .app--header {
     padding: 1.5rem;
-    border-top: .5rem solid $red;
+    border-top: .5rem solid $yellow;
     // fill: $red;
-    background: $offwhite;
+    background: rgba($blue, .0125);
     text-align: center;
     svg {
         max-width: 12.5rem;
@@ -15,9 +15,10 @@
         width: 100%;
         height: auto;
         float: left;
-        fill: $red;
+        fill: $blue;
+        transition: fill 375ms linear;
         &:hover {
-            fill: mix($dark-red, black);
+            fill: mix($dark-blue, $black);
         }
     }
     .container {
@@ -54,9 +55,7 @@
         @include respond-to(medium-screens) { width: 50%; }
         @include respond-to(handhelds) { width: 100%; }
     }
-    p {
-        font-family: $serif;
-    }
+    p { }
 }
 
 .section--heading {
@@ -68,5 +67,11 @@
         background: $blue;
         display: block;
         margin-bottom: .5rem;
+    }
+}
+.btn-alt, .btn {
+    margin-right: 1.25rem;
+    &:last-of-type {
+        margin-right: 0;
     }
 }

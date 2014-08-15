@@ -10,14 +10,15 @@
     }
     &--window {
         position:absolute;
-        background:rgba(0,0,0,0.2);
-        border-radius:14px;
-        padding:8px;
+        // background:rgba(0,0,0,0.2);
+        border-radius: .5rem;
+        padding: .5rem;
     }
     &--content {
-        border-radius:8px;
+        border-radius:.5rem;
         background:#fff;
-        padding:20px;
+        padding: 20px;
+        border: .5rem solid rgba($red, .5);
     }
     &--close {
         position:absolute;

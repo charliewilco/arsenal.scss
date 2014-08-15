@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="//use.typekit.net/lbs5xmh.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <link rel="stylesheet" href="/css/arsenal.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="/css/app.css" media="screen" charset="utf-8">
     <title>Arsensal</title>
@@ -54,7 +52,7 @@
     </header>
     <section id="base" class="app--intro">
         <div class="col3 first">
-            <h1>Arsenal</h1>
+            <h1>Arsenal.scss</h1>
             <p>Arsenal is a collection of components, design patterns, generally anything I've found that can be reusable/modifiable/stuff-I-need-a-lot and other stuff I think could be useful.</p>
             <p>The idea here is that every component can be divided into a SASS partial and easily added into an existing project once the base directory is installed.</p>
         </div>
@@ -72,16 +70,17 @@
         <div class="col3">
             <h2>Compontents</h2>
             <ul>
-                <li>Buttons</li>
-                <li>Hero Units</li>
-                <li>Tabs</li>
-                <li>Warnings</li>
+                <li><strike>Buttons</strike></li>
+                <li><strike>Hero Units</strike></li>
+                <li><strike>Tabs</strike></li>
+                <li><strike>Warnings</strike></li>
                 <li>Modals</li>
                 <li>Accordion</li>
                 <li>Article Headings</li>
                 <li>Media Objects</li>
                 <li>Comments Thread</li>
                 <li>Badges &amp; Labels</li>
+                <li>Sharing</li>
             </ul>
         </div>
     </section>
@@ -174,24 +173,25 @@
     <ol class="comment--thread">
 			<li class="comment even thread-even depth-1 parent" id="comment-2">
 				<div id="div-comment-2" class="comment-body">
-				<div class="comment-author vcard">
-			<img alt="" src="http://1.gravatar.com/avatar/3678c4824c349eb2cfc09e996472896d?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn">Someone</cite> <span class="says">says:</span>		</div>
-				<em class="comment-awaiting-moderation">Your comment is awaiting moderation.</em>
-		<br>
-
-		<div class="comment-meta commentmetadata"><a href="http://eccle.sia:8888/post-2/#comment-2">
-			August 15, 2014 at 5:24 am</a>		</div>
-
-		<p>asdfdsafas</p>
-
-		<div class="reply">
-			<a class="comment-reply-link" href="/post-2/?replytocom=2#respond" onclick="return addComment.moveForm(&quot;div-comment-2&quot;, &quot;2&quot;, &quot;respond&quot;, &quot;61&quot;)">Reply</a>		</div>
+    				<div class="comment-author vcard">
+        			    <img class="comment--avatar" alt="" src="http://1.gravatar.com/avatar/3678c4824c349eb2cfc09e996472896d?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G">
+                        <cite class="fn">Someone</cite> <span class="says">says:</span>
+                    </div>
+				    <em class="comment-awaiting-moderation">Your comment is awaiting moderation.</em>
+		            <div class="comment-meta commentmetadata">
+                        <a href="#">August 15, 2014 at 5:24 am</a>
+                    </div>
+		            <p>asdfdsafas</p>
+	                <div class="reply">
+                        <a class="comment-reply-link" href="#">Reply</a>
+                    </div>
 				</div>
-		<ul class="children">
-		<li class="comment odd alt depth-2" id="comment-3">
+                <ul class="comment--thread_child">
+		            <li class="comment" id="comment-3">
 				<div id="div-comment-3" class="comment-body">
 				<div class="comment-author vcard">
-			<img alt="" src="http://1.gravatar.com/avatar/3678c4824c349eb2cfc09e996472896d?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn">Someone</cite> <span class="says">says:</span>		</div>
+			<img class="comment--avatar" src="http://1.gravatar.com/avatar/3678c4824c349eb2cfc09e996472896d?s=32&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G">
+            <cite class="fn">Someone</cite> <span class="says">says:</span>		</div>
 				<em class="comment-awaiting-moderation">Your comment is awaiting moderation.</em>
 		<br>
 

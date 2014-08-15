@@ -2,8 +2,18 @@
     &--form {
 
     }
-
+    &--avatar {
+        border-radius: 100%;
+    }
     &--thread {
         list-style: none inside;
+        li {
+            width: 100%;
+            padding: 1rem;
+        }
+        &_child {
+            background: lighten($black, 75%);
+            margin: 1rem 0;
+        }
     }
 }
