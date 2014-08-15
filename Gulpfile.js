@@ -1,6 +1,6 @@
 var gulp         = require('gulp'),
     uglify       = require('gulp-uglify'),
-    sass         = require('gulp-sass'),
+    sass         = require('gulp-ruby-sass'),
     plumber      = require('gulp-plumber'),
     autoprefixer = require('gulp-autoprefixer'),
     connect      = require('gulp-connect'),
