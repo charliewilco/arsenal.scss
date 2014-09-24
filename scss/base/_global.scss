@@ -18,3 +18,7 @@ html {
       @extend %clearfix;
   }
 }
+
+.hidden {
+  display: none;
+}

@@ -9,22 +9,37 @@
         // opacity: 0.5;
     }
     &--window {
-        position:absolute;
-        // background:rgba(0,0,0,0.2);
-        border-radius: .5rem;
+        background: $offwhite;
+        position: fixed;
+        box-shadow: 0 0 1.5rem 0 rgba($black, .375);
+        max-width: $break-small;
+        max-height: 80%;
         padding: .5rem;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        overflow-y: scroll;
+        @include respond-to(handhelds) {
+          max-height: 100%;
+        }
+        .icon {
+          background: $offwhite;
+          border-radius: 100%;
+          border: 1px solid $blue;
+        }
     }
     &--content {
-        border-radius:.5rem;
-        background:#fff;
-        padding: 20px;
-        border: .5rem solid rgba($red, .5);
+        padding: 1rem;
+        position: relative;
+        // border: .25rem solid rgba($blue, .5);
     }
     &--close {
         position:absolute;
         display:block;
-        text-indent:-9999px;
-        top:-7px;
-        right:-7px;
+        text-indent:px;
+        top: 1rem;
+        right: 1rem;
     }
 }
