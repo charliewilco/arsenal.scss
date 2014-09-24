@@ -10,9 +10,13 @@
         li {
             width: 100%;
             padding: 1rem;
+            ul {
+              list-style: none inside;
+              margin-left: 1rem;
+            }
         }
         &_child {
-            background: lighten($black, 75%);
+            background: lighten($black, 77%);
             margin: 1rem 0;
         }
     }

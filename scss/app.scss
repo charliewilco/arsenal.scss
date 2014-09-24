@@ -5,7 +5,7 @@
 
 .app--header {
     padding: 1.5rem;
-    border-top: .5rem solid $yellow;
+    border-top: .25rem solid $blue;
     // fill: $red;
     background: rgba($blue, .0125);
     text-align: center;
@@ -33,11 +33,12 @@
 
 .app--intro {
     width: 100%;
-    background: rgba($red, .75);
+    background: rgba($blue, .75);
     padding: 1rem;
     color: white;
     h1, h2 {
-        color: darken($red, 1);
+        color: darken($blue, 1);
+        font-weight: 300;
     }
     &::after {
         @extend %clearfix;
@@ -60,13 +61,15 @@
 
 .section--heading {
     color: $blue;
-    &::before {
+    font-weight: 300;
+    text-align: center;
+    &::after {
         content: "";
-        width: 6rem;
-        height: 5px;
+        width: 5rem;
+        height: .125rem;
         background: $blue;
         display: block;
-        margin-bottom: .5rem;
+        margin: .5rem auto 2rem;
     }
 }
 .btn-alt, .btn {
