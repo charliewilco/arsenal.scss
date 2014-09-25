@@ -1,3 +1,3 @@
-function arsenalModal {
+function arsenalModal() {
     console.log('dance with modals');
 }
