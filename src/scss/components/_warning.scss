@@ -1,25 +1,39 @@
 .warning {
     width: 100%;
     padding: 2rem 1rem;
-    background: rgba($blue, .125);
-    color: darken($dark-blue, 20%);
-    font-style: italic;
-    font-size: 1.25rem;
-    margin: 1rem .5rem;
-    border-left: 3px solid $dark-blue;
+    background: rgba($blue, .25);
+    color: $dark-blue;
+    // font-style: italic;
+    // font-size: 1.25rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    border-left: .25rem solid;
+    .icon {
+      width: 3rem;
+      height: 3rem;
+      fill: $blue;
+      vertical-align: middle;
+      display: inline-block;
+    }
+    p {
+      display: inline-block;
+    }
     &--red {
-        background: rgba($red, .125);
-        border-color: $dark-red;
-        color: darken($dark-red, 20%);
+        background: rgba($red, .25);
+        //border-color: $dark-red;
+        color: $dark-red;
+        .icon { fill: $red; }
     }
     &--yellow {
-        background: rgba($yellow, .125);
-        border-color: $dark-yellow;
-        color: darken($dark-yellow, 20%);
+        background: rgba($yellow, .25);
+        // border-color: $dark-yellow;
+        color: $dark-yellow;
+        .icon { fill: $yellow; }
     }
     &--green {
-        background: rgba($green, .125);
-        border-color: $dark-green;
-        color: darken($dark-green, 20%);
+        background: rgba($green, .25);
+        // border-color: $dark-green;
+        color: $dark-green;
+        .icon { fill: $green; }
     }
 }

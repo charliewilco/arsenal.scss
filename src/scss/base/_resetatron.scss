@@ -36,9 +36,7 @@ p {
     font-size: 1rem;
     word-wrap: break-word;
     text-rendering: optimizeLegibility;
-    &:last-of-type {
-        margin-bottom: 0;
-    }
+    &:last-of-type {margin-bottom: 0;}
 }
 
 b, strong { font-weight: bold; }
