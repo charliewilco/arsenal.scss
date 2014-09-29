@@ -17,6 +17,12 @@ html {
   &::after {
       @extend %clearfix;
   }
+  &--wide {
+    @extend .container;
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .hidden {

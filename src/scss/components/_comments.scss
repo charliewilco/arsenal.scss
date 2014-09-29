@@ -1,23 +1,67 @@
 .comment {
-    &--form {
+    // display: block;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    float: left;
+    &::after {
+      @extend %clearfix;
+    }
+    &--info {
+      margin-bottom: 1rem;
+      &::after {
+        @extend %clearfix;
+      }
+      &_meta {
+        text-transform: uppercase;
+        font-size: .875rem;
+        float: right;
+        @include respond-to(handhelds) {
+          float: none;
+        }
+      }
+      &_name {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      &_avatar {
+        display: inline-block;
+        vertical-align: middle;
+        .icon {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
+    &--reply {
 
     }
-    &--avatar {
-        border-radius: 100%;
+    &--body {
+      margin-bottom: 1rem;
+      border-left: .25rem solid $blue;
+      padding-left: 1rem;
+      p {
+        @include respond-to(handhelds) { font-size: .875rem; }
+      }
     }
     &--thread {
         list-style: none inside;
         li {
             width: 100%;
             padding: 1rem;
+            display: block;
             ul {
               list-style: none inside;
-              margin-left: 1rem;
+              margin: 0 0 0 1rem;
             }
         }
         &_child {
-            background: lighten($black, 77%);
-            margin: 1rem 0;
+
+            &::after {
+              @extend %clearfix;
+            }
+            li {
+              background: lighten($black, 75%);
+            }
         }
     }
 }

@@ -52,8 +52,17 @@
   color: $blue;
   font-size: 1rem;
   background: none;
-  transition: background 500ms ease, color 500ms ease;
-  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: all 500ms ease;
+  margin: .5rem;
+  // display: inline-block;
+  width: 100%;
+  max-width: 20rem;
+  @include respond-to(handhelds) {
+    display: block;
+    margin: .5rem 0;
+  }
   &:hover, &:focus {
     background: $dark-blue;
     color: $offwhite;
@@ -61,22 +70,16 @@
   &--red {
       color: $red;
       border-color: rgba($dark-red, .5);
-      &:hover, &:focus {
-          background: $dark-red;
-      }
+      &:hover, &:focus { background: $dark-red; }
   }
   &--green {
       color: $green;
       border-color: rgba($dark-green, .5);
-      &:hover, &:focus {
-          background: $dark-green;
-      }
+      &:hover, &:focus { background: $dark-green; }
   }
   &--yellow {
       color: $yellow;
       border-color: rgba($dark-yellow, .5);
-      &:hover, &:focus {
-          background: $dark-yellow;
-      }
+      &:hover, &:focus { background: $dark-yellow; }
   }
 }

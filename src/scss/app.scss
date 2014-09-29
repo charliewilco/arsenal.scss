@@ -3,11 +3,11 @@
 @import "base/partials";
 
 .app--header {
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     border-top: .25rem solid $blue;
     // fill: $red;
-    background: rgba($blue, .0125);
-    // text-align: center;
+    background: rgba($blue, .5);
+    text-align: center;
     svg {
         max-width: 12.5rem;
         max-height: 100%;
@@ -32,7 +32,7 @@
 
 .app--intro {
     width: 100%;
-    background: rgba($blue, .75);
+    background: rgba($blue, .625);
     padding: 1rem;
     color: white;
     h1, h2 {
@@ -60,7 +60,9 @@
 
 .section--heading {
     color: $blue;
-    font-weight: 300;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     text-align: center;
     &::after {
         content: "";
@@ -71,9 +73,14 @@
         margin: .5rem auto 2rem;
     }
 }
-.btn-alt, .btn {
+
+/* .btn-alt, .btn {
     margin-right: 1.25rem;
     &:last-of-type {
         margin-right: 0;
     }
+} */
+.comment--thread {
+  max-width: 48rem;
+  margin: 0 auto;
 }

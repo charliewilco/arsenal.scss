@@ -8,13 +8,13 @@
     h1 {
         font-weight: 700;
         font-size: 4.5rem;
-        letter-spacing: -1px;
-        // text-shadow: 0 0 1rem rgba($black, 1);
+        margin-bottom: 1rem;
      }
+     .btn { display: inline-block; }
      .container {
-         background: rgba($offwhite, .875);
+         background: rgba($offwhite, .925);
          max-width: 40rem;
-         border-radius: 1rem;
+         border-radius: .5rem;
          padding: 3rem 1rem;
      }
 }
