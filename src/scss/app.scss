@@ -29,7 +29,14 @@
         // display: none;
     }
 }
-
+.app--footer {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  .icon {
+    width: 3rem;
+    height: 3rem;
+  }
+}
 .app--intro {
     width: 100%;
     background: rgba($blue, .625);
@@ -53,7 +60,7 @@
         padding: 2rem;
         float: left;
         @include respond-to(medium-screens) { width: 50%; }
-        @include respond-to(handhelds) { width: 100%; }
+        @include respond-to(handhelds) { width: 100%; padding: .5rem; }
     }
     p { }
 }
@@ -61,9 +68,10 @@
 .section--heading {
     color: $blue;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    // text-transform: uppercase;
+    // letter-spacing: 2px;
     text-align: center;
+    margin-top: 1rem;
     &::after {
         content: "";
         width: 5rem;
@@ -83,4 +91,9 @@
 .comment--thread {
   max-width: 48rem;
   margin: 0 auto;
+}
+
+.item {
+  float: left;
+  margin: .5rem;
 }

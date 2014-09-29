@@ -10,6 +10,9 @@ html {
   background: $offwhite;
   box-sizing: border-box;
 }
+img {
+  max-width: 100%;
+}
 .container {
   margin: .5rem auto;
   max-width: 68rem;
@@ -21,7 +24,7 @@ html {
     @extend .container;
     max-width: 100%;
     width: 100%;
-    padding: 0;
+    padding: .5rem 0;
   }
 }
 
