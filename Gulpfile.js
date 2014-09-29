@@ -5,10 +5,11 @@ var gulp         = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     connect      = require('gulp-connect'),
     concat       = require('gulp-concat'),
+    fileinclude  = require('gulp-file-include'),
     imagemin     = require('gulp-imagemin');
 
 gulp.task('scripts', function(){
-    gulp.src('js/*.js')
+    gulp.src('src/js/*.js')
         .pipe(plumber())
         .pipe(uglify())
         .pipe(concat('arsenal.min.js'))
@@ -17,7 +18,7 @@ gulp.task('scripts', function(){
 });
 
 gulp.task('styles', function(){
-    gulp.src('scss/**/*.scss')
+    gulp.src('src/scss/**/*.scss')
         .pipe(plumber())
         .pipe(sass({style: 'compressed'}))
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
@@ -26,21 +27,25 @@ gulp.task('styles', function(){
 });
 
 gulp.task('html', function () {
-  gulp.src('index.html')
+  gulp.src('src/index.html')
     .pipe(gulp.dest('build/'))
     .pipe(connect.reload());
 });
 
-gulp.task('templates', function() {
-  gulp.src('./lib/*.html')
-    .pipe(swig())
-    .pipe(gulp.dest('./dist/'));
+gulp.task('fileinclude', function() {
+  gulp.src('src/index.html')
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('build/'))
+    .pipe(connect.reload());
 });
 
 gulp.task('watch', function(){
-    gulp.watch('js/*.js', ['scripts']);
-    gulp.watch('scss/**/*.scss', ['styles']);
-    gulp.watch(['index.html'], ['html']);
+    gulp.watch('src/js/*.js', ['scripts']);
+    gulp.watch('src/scss/**/*.scss', ['styles']);
+    gulp.watch(['src/index.html', 'src/inc/*'], ['fileinclude']);
 });
 
 gulp.task('connect', function() {
@@ -48,7 +53,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('images', function () {
-    return gulp.src('img/*')
+    return gulp.src('src/img/*')
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}]
@@ -57,5 +62,5 @@ gulp.task('images', function () {
 });
 
 
-gulp.task('default', ['html','scripts', 'styles', 'images', 'watch', 'connect']);
-gulp.task('build', ['html','scripts', 'styles', 'images']);
+gulp.task('default', ['fileinclude','scripts', 'styles', 'images', 'watch', 'connect']);
+gulp.task('build', ['fileinclude','scripts', 'styles', 'images']);
