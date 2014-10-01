@@ -1,5 +1,5 @@
 // colors
-$offwhite: #fffcfc;
+$offwhite: #f0f0f0;
 $black: #202020;
 $red: #d04d36;
 // $blue: #5486a4;
@@ -18,4 +18,13 @@ $dark-green: #5ba221;
 
 // fonts
 $serif: "Georgia", Times, serif;
-$sans-serif: "Avenir", "Helvetica", "Helvetica Neue", "fira-sans", Helvetica, Arial, "Lucida Grande", sans-serif;
+$sans-serif: "Open Sans", "Avenir", "Helvetica", "Helvetica Neue", "fira-sans", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+// z-index
+$z-layers: (
+  "top":            9999,
+  "almost-top":     9998,
+  "default":            1,
+  "below":             -1,
+  "waydownthere":   -9000
+)

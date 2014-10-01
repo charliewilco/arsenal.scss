@@ -1,9 +1,10 @@
 .item {
   position: relative;
+  display: inline-block;
   max-width: 21rem;
   background: rgba(white, .75);
   border-radius: .5rem;
-	box-shadow: 0px 0px .75rem 0 rgba($text, .5);
+	// box-shadow: 0px 0px .75rem 0 rgba($text, .5);
   &--info {
     padding: 1.5rem;
     &_title { margin: 0 0 .5rem; }

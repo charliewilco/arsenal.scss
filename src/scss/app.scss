@@ -80,6 +80,10 @@
         display: block;
         margin: .5rem auto 2rem;
     }
+    &_second {
+      font-weight: 300;
+      margin: 1.5rem 0;
+    }
 }
 
 /* .btn-alt, .btn {
@@ -93,7 +97,10 @@
   margin: 0 auto;
 }
 
+#mediaobjects, #modals {
+  text-align: center;
+}
 .item {
-  float: left;
+  // float: left;
   margin: .5rem;
 }
