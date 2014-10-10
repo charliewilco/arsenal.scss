@@ -1,13 +1,12 @@
-@import "base/variables";
-@import "base/mixins";
-@import "base/partials";
+$sans-serif: Proxima Nova Condensed, Chaparral Pro, Helvetica Neue, "Source Sans Pro";
+$baseFontSize: 1.125rem;
+
+@import "arsenal";
 
 .app--header {
     padding: 1.5rem 0;
-    border-top: .25rem solid $blue;
-    // fill: $red;
-    background: rgba($blue, .5);
-    text-align: center;
+    border-top: .125rem solid $blue;
+    background: rgba($blue, .75);
     svg {
         max-width: 12.5rem;
         max-height: 100%;
@@ -16,18 +15,26 @@
         float: left;
         fill: $blue;
         transition: fill 375ms linear;
-        &:hover {
-            fill: mix($dark-blue, $black);
-        }
+        &:hover { fill: mix($dark-blue, $black); }
     }
     .container {
         max-width: 93%;
         padding: 0;
         margin: 0 auto;
     }
-    h1 {
-        // display: none;
+    &_logo {
+      display: block;
+      float: left;
     }
+    &_nav {
+      float: right;
+      ul {list-style: none;}
+      li {
+        display: inline-block;
+        padding: 0 .25rem;
+      }
+    }
+    a { color: white; }
 }
 .app--footer {
   text-transform: uppercase;
@@ -42,18 +49,14 @@
     background: rgba($blue, .625);
     padding: 1rem;
     color: white;
-    h1, h2 {
-        color: darken($blue, 1);
-        font-weight: 300;
-    }
-    &::after {
-        @extend %clearfix;
-    }
+    h1 {font-weight: 300;}
+    h1, h2 { color: darken($blue, 1); }
+    &::after { @extend %clearfix; }
     .first {
-        @include respond-to(medium-screens) {
-            width: 100% !important;
-            float: none;
-        }
+      @include respond-to(medium-screens) {
+          width: 100% !important;
+          float: none;
+      }
     }
     .col3 {
         width: percentage(1/3);
@@ -62,7 +65,6 @@
         @include respond-to(medium-screens) { width: 50%; }
         @include respond-to(handhelds) { width: 100%; padding: .5rem; }
     }
-    p { }
 }
 
 .section--heading {
@@ -86,12 +88,6 @@
     }
 }
 
-/* .btn-alt, .btn {
-    margin-right: 1.25rem;
-    &:last-of-type {
-        margin-right: 0;
-    }
-} */
 .comment--thread {
   max-width: 48rem;
   margin: 0 auto;
@@ -101,6 +97,59 @@
   text-align: center;
 }
 .item {
-  // float: left;
   margin: .5rem;
+}
+
+
+.color {
+  &--fill {
+    border-radius: .5rem;
+    width: 8.5rem;
+    height: 3rem;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      margin: auto;
+      bottom: -1.20rem;
+      left: 0;
+      right: 0;
+      text-indent: -24.5%;
+      text-transform: lowercase;
+      line-height: 2;
+      border-left: 1.25rem solid transparent;
+      border-right: 1.25rem solid transparent;
+      font-weight: 700;
+      font-family: Menlo, monospace;
+    }
+  }
+  &--container {
+    display: inline-block;
+    vertical-align: top;
+    margin: .25rem;
+    text-align: center;
+    min-height: 6.5rem;
+  }
+  $colors: offwhite $offwhite, black $black, red $red, blue $blue, yellow $yellow, green $green, gray $gray, text $text, orange $orange, bluegreen $bluegreen, purple $purple, fushia $fushia, ygreen $ygreen;
+  @each $color in $colors {
+    &--fill_#{"" +nth($color, 1)} {
+      background: nth($color, 2);
+      &::before {
+        content: "$#{"" +nth($color, 1)}";
+        color: white;
+        font-weight: 700;
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+        padding: .75rem;
+        text-align: center;
+        width: 100%;
+      }
+      &::after {
+        content: "#{nth($color, 2)}";
+        border-top: 1.25rem solid nth($color, 2);
+      }
+    }
+  }
 }

@@ -1,0 +1,29 @@
+.hero {
+    background: url('../img/arsenalhero-compressed.jpg') no-repeat center bottom / cover;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    min-height: 25rem;
+    width: 100%;
+    color: $offwhite;
+    &--headline {
+        font-weight: 700;
+        font-size: $baseFontSize * 4.5;
+        margin-bottom: 1rem;
+     }
+     .btn {
+      // display: inline-block;
+      color: $offwhite;
+      border-color: $offwhite;
+      &:focus, &:hover {
+        border-color: $blue;
+        // color: $dark-blue;
+      }
+    }
+     &--container {
+        background: rgba($offwhite, .125);
+        max-width: 40rem;
+        margin: 0 auto;
+        border-radius: .5rem;
+        padding: 3rem 1rem;
+     }
+}

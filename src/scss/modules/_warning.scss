@@ -1,16 +1,15 @@
 .warning {
     width: 100%;
     padding: 1.5rem 1rem;
-    background: rgba($blue, .25);
+    background: rgba($blue, .375);
     color: $dark-blue;
     font-weight: 700;
     margin: 1rem 0;
-    border-radius: .375rem;
-    border: .1875rem solid;
+    border-left: .125rem solid;
     .icon {
       width: 3rem;
       height: 3rem;
-      fill: $blue;
+      fill: white;
       vertical-align: middle;
       display: inline-block;
     }
@@ -20,21 +19,18 @@
       @include respond-to(handhelds) { display: inline; }
     }
     &--red {
-        background: rgba($red, .25);
+        background: rgba($red, .375);
         //border-color: $dark-red;
         color: $dark-red;
-        .icon { fill: $red; }
     }
     &--yellow {
-        background: rgba($yellow, .25);
+        background: rgba($yellow, .375);
         // border-color: $dark-yellow;
         color: $dark-yellow;
-        .icon { fill: $yellow; }
     }
     &--green {
-        background: rgba($green, .25);
+        background: rgba($green, .375);
         // border-color: $dark-green;
         color: $dark-green;
-        .icon { fill: $green; }
     }
 }

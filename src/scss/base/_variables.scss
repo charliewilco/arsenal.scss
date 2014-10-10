@@ -1,13 +1,19 @@
 // colors
+
+// $blue: #5486a4;
+
 $offwhite: #f0f0f0;
 $black: #202020;
 $red: #d04d36;
-// $blue: #5486a4;
 $blue: #147AAB;
+$bluegreen: #1d889d;
 $yellow: #ffba00;
+$ygreen: #cee89c;
 $green: #6cc034;
+$orange: #e36511;
+$purple: #834f91;
+$fushia: #FA5E5B;
 $gray: #ccc;
-$text: #484848;
 $text: #484848;
 
 //dark colors
@@ -17,8 +23,11 @@ $dark-yellow: #f5b300;
 $dark-green: #5ba221;
 
 // fonts
-$serif: "Georgia", Times, serif;
-$sans-serif: "Open Sans", "Avenir", "Helvetica", "Helvetica Neue", "fira-sans", Helvetica, Arial, "Lucida Grande", sans-serif;
+$serif: "Georgia", Times, serif !default;
+$sans-serif: "Helvetica", "Helvetica Neue", "fira-sans", Helvetica, Arial, "Lucida Grande", sans-serif !default;
+
+$baseFontWeight: 300 !default;
+$baseFontSize: 1rem !default;
 
 // z-index
 $z-layers: (

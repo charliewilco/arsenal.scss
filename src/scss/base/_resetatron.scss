@@ -1,39 +1,55 @@
-$text: #333;
-
 * {
     margin: 0;
     padding: 0;
 }
 
 html {
-    font: 400 100%/1.5 $sans-serif;
+    font: $baseFontWeight 100%/1.5 $sans-serif;
     color: $text;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-weight: 700;
-    margin: 0 0 .5rem;
-    line-height: 1.2;
+  font-weight: 700;
+  margin: 0 0 .5rem;
+  line-height: 1.2;
 }
 
-h1 { font-size: 2rem; }
+h1 {
+  font-size: $baseFontSize + $baseFontSize;
+  @at-root .#{&} { @extend h1; }
+}
 
-h2 { font-size: 1.75rem; }
+h2 {
+  font-size: $baseFontSize + ($baseFontSize*.75);
+  @at-root .#{&} { @extend h2; }
+}
 
-h3 { font-size: 1.5rem; }
+h3 {
+  font-size: $baseFontSize + ($baseFontSize/2);
+  @at-root .#{&} { @extend h3; }
+}
 
-h4 { font-size: 1.25rem; }
+h4 {
+  font-size: $baseFontSize + ($baseFontSize/4);
+  @at-root .#{&} { @extend h4; }
+}
 
-h5 { font-size: 1.125rem; }
+h5 {
+  font-size: $baseFontSize + ($baseFontSize/8);
+  @at-root .#{&} { @extend h5; }
+}
 
-h6 { font-size: 1rem; }
+h6 {
+  font-size: $baseFontSize;
+  @at-root .#{&} { @extend h6; }
+}
 
 p {
     margin-bottom: 1rem;
     max-width: 38rem;
-    font-size: 1rem;
+    font-size: $baseFontSize;
     word-wrap: break-word;
     text-rendering: optimizeLegibility;
     &:last-of-type {margin-bottom: 0;}

@@ -44,13 +44,13 @@
 
 .btn {
   text-align: center;
-  padding: 1rem 2rem;
-  font-weight: 700;
+  padding: .5rem 2rem;
+  font-weight: 400;
   text-decoration: none;
-  border: .1875rem solid rgba($dark-blue, .5);
-  border-radius: .625rem;
+  border: 2px solid rgba($dark-blue, .5);
+  border-radius: .5rem;
   color: $blue;
-  font-size: 1rem;
+  font-size: $baseFontSize + .125rem;
   background: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -90,10 +90,10 @@
   padding: 1rem 2rem;
   font-weight: 700;
   text-decoration: none;
-  border-bottom: .25rem solid darken($dark-blue, 12.5%);
+  border-bottom: .125rem solid darken($dark-blue, 12.5%);
   border-radius: .375rem;
   color: white;
-  font-size: 1rem;
+  font-size: $baseFontSize + ($baseFontSize/4);
   background: $blue;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -109,6 +109,7 @@
   }
   &:hover, &:focus {
     background: $dark-blue;
+    border: 0;
   }
   &--red {
       background: $red;
