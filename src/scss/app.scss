@@ -1,5 +1,5 @@
-$sans-serif: Proxima Nova Condensed, Chaparral Pro, Helvetica Neue, "Source Sans Pro";
-$baseFontSize: 1.125rem;
+/* \$sans-serif: Proxima Nova Condensed, Chaparral Pro, Helvetica Neue, "Source Sans Pro";
+\$baseFontSize: 1.125rem; */
 
 @import "arsenal";
 
@@ -49,7 +49,6 @@ $baseFontSize: 1.125rem;
     background: rgba($blue, .625);
     padding: 1rem;
     color: white;
-    h1 {font-weight: 300;}
     h1, h2 { color: darken($blue, 1); }
     &::after { @extend %clearfix; }
     .first {

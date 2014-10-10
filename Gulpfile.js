@@ -27,13 +27,13 @@ gulp.task('styles', function(){
 });
 
 gulp.task('html', function () {
-  gulp.src('src/index.html')
+  gulp.src('src/*.html')
     .pipe(gulp.dest('build/'))
     .pipe(connect.reload());
 });
 
 gulp.task('fileinclude', function() {
-  gulp.src('src/index.html')
+  gulp.src('src/*.html')
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
@@ -42,11 +42,7 @@ gulp.task('fileinclude', function() {
     .pipe(connect.reload());
 });
 
-gulp.task('watch', function(){
-    gulp.watch('src/js/*.js', ['scripts']);
-    gulp.watch('src/scss/**/*.scss', ['styles']);
-    gulp.watch(['src/index.html', 'src/inc/*'], ['fileinclude']);
-});
+
 
 gulp.task('connect', function() {
     connect.server({ root: 'build', livereload: true });
@@ -61,6 +57,12 @@ gulp.task('images', function () {
         .pipe(gulp.dest('build/img/'));
 });
 
+gulp.task('watch', function(){
+    gulp.watch('src/js/*.js', ['scripts']);
+    gulp.watch('src/scss/**/*.scss', ['styles']);
+    gulp.watch(['src/*.html', 'src/inc/*'], ['fileinclude']);
+    gulp.watch(['src/img/*'], ['images']);
+});
 
 gulp.task('default', ['fileinclude','scripts', 'styles', 'images', 'watch', 'connect']);
 gulp.task('build', ['fileinclude','scripts', 'styles', 'images']);
