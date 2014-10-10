@@ -1,6 +1,6 @@
 {
-  "name": "Arsenal",
-  "version": "0.0.0",
+  "name": "arsenal",
+  "version": "0.0.1",
   "main": "gulpfile.js",
   "author": "Charles Peters <charlespeters42@gmail.com>",
   "repository": {
