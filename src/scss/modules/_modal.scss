@@ -1,7 +1,7 @@
 .modal {
   visibility: hidden;
   transform: scale(0.7);
-  transition: all 375ms ease;
+  transition: all $transition-duration ease;
   &--show {
     visibility: visible;
     transform: scale(1);

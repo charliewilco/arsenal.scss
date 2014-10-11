@@ -1,10 +1,11 @@
 .hero {
     background: url('../img/arsenalhero-compressed.jpg') no-repeat center bottom / cover;
-    padding: 2.5rem 1rem;
+    padding: 6rem 1rem;
     text-align: center;
     min-height: 25rem;
     width: 100%;
     color: $offwhite;
+    min-height: 100%;
     &--headline {
         font-weight: 700;
         font-size: $baseFontSize * 4.5;

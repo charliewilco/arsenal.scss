@@ -8,7 +8,7 @@
 //   color: $offwhite;
 //   font-size: 1rem;
 //   background: linear-gradient($blue 75%, $dark-blue);
-//   transition: background 500ms ease, color 500ms ease;
+//   transition: background $transition-duration ease, color $transition-duration ease;
 //   display: inline-block;
 //   // text-shadow: 0 0 .25rem rgba($black, .5);
 //   &:hover, &:focus {
@@ -54,7 +54,7 @@
   background: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  transition: all 500ms ease;
+  transition: all $transition-duration ease;
   margin: .5rem;
   display: inline-block;
   // width: 100%;
@@ -97,10 +97,9 @@
   background: $blue;
   -webkit-appearance: none;
   -moz-appearance: none;
-  transition: all 500ms ease;
+  transition: all $transition-duration ease;
   margin: .5rem;
   display: inline-block;
-  // width: 100%;
   max-width: 25rem;
   .icon { fill: currentColor; }
   @include respond-to(handhelds) {

@@ -1,13 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 html {
-    font: $baseFontWeight 100%/1.5 $sans-serif;
-    color: $text;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font: $baseFontWeight 100%/1.5 $sans-serif;
+  color: $text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -62,6 +57,7 @@ i, em { font-style: italic; }
 a {
   text-decoration: none;
   color: $blue;
+  transition: all $transition-duration $transition-func;
 }
 
 ul, ol {
@@ -76,16 +72,21 @@ ul, ol {
 }
 
 blockquote {
-    border-left: 5px solid $text;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     font-style: italic;
     margin: 1rem 0;
-    background: rgba($text, .3 );
-    color: white;
+    color: $blue;
+    &::after {
+      content: "";
+      width: 5rem;
+      height: 2px;
+      display: block;
+      margin: .5rem 0;
+      background: $blue;
+    }
     p {
         line-height: 1.6;
         font-weight: 300;
-        font-size: 1.125rem;
-        margin: 0 0 .5rem;
+        font-size: $baseFontSize + ($baseFontSize/4);
     }
 }

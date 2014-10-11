@@ -1,0 +1,12 @@
+.post {
+	&--full {
+		max-width: 38rem;
+		margin: 1rem auto;
+		padding: .5rem;
+	}
+	&--header {
+		&_ctr {
+			text-align: center;
+		}
+	}
+}

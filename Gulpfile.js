@@ -34,6 +34,7 @@ gulp.task('html', function () {
 
 gulp.task('fileinclude', function() {
   gulp.src('src/*.html')
+    .pipe(plumber())
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
@@ -60,7 +61,7 @@ gulp.task('images', function () {
 gulp.task('watch', function(){
     gulp.watch('src/js/*.js', ['scripts']);
     gulp.watch('src/scss/**/*.scss', ['styles']);
-    gulp.watch(['src/*.html', 'src/inc/*'], ['fileinclude']);
+    gulp.watch(['src/*.html', 'src/inc/**/*.html'], ['fileinclude']);
     gulp.watch(['src/img/*'], ['images']);
 });
 
