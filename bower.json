@@ -6,7 +6,7 @@
     "charlespeters <charlespeters42@gmail.com>"
   ],
   "description": "SASS based UI pattern library",
-  "main": "src/arsenal.scss",
+  "main": "src/_arsenal.scss",
   "keywords": [
     "pattern",
     "library",
@@ -20,7 +20,12 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "src/scss/app.scss",
+    "src/scss/inc/head.html",
+    "src/inc/*.svg"
+    "src/index.html",
+    "src/inc/header.html"
   ],
   "devDependencies": {
     "jquery": "~2.1.1"
