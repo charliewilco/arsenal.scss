@@ -25,6 +25,9 @@
     "src/scss/inc/head.html",
     "src/inc/*.svg",
     "src/index.html",
+    "src/modules.html",
+    "src/forms.html",
+    "src/components.html",
     "src/inc/header.html"
   ],
   "devDependencies": {

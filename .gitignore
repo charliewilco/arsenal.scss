@@ -7,6 +7,4 @@ build/
 
 src/inc/header.html
 src/inc/footer.html
-src/img/
-src/index.html
 src/inc/*.svg

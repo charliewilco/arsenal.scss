@@ -59,6 +59,15 @@
   display: inline-block;
   // width: 100%;
   max-width: 25rem;
+  &--icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .5rem;
+  }
+  &--text {
+    display: inline-block;
+    vertical-align: middle;
+  }
   .icon { fill: currentColor; }
   @include respond-to(handhelds) {
     display: block;
@@ -81,48 +90,6 @@
   &--yellow {
       color: $yellow;
       border-color: rgba($dark-yellow, .5);
-      &:hover, &:focus { background: $dark-yellow; }
-  }
-}
-
-.btnalt {
-  text-align: center;
-  padding: 1rem 2rem;
-  font-weight: 700;
-  text-decoration: none;
-  border-bottom: .125rem solid darken($dark-blue, 12.5%);
-  border-radius: .375rem;
-  color: white;
-  font-size: $baseFontSize + ($baseFontSize/4);
-  background: $blue;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  transition: all $transition-duration ease;
-  margin: .5rem;
-  display: inline-block;
-  max-width: 25rem;
-  .icon { fill: currentColor; }
-  @include respond-to(handhelds) {
-    display: block;
-    margin: .5rem 0;
-  }
-  &:hover, &:focus {
-    background: $dark-blue;
-    border: 0;
-  }
-  &--red {
-      background: $red;
-      border-color: darken($dark-red, 12.5%);
-      &:hover, &:focus { background: $dark-red; }
-  }
-  &--green {
-      background: $green;
-      border-color: darken($dark-green, 12.5%);
-      &:hover, &:focus { background: $dark-green; }
-  }
-  &--yellow {
-      background: $yellow;
-      border-color: darken($dark-yellow, 12.5%);
       &:hover, &:focus { background: $dark-yellow; }
   }
 }

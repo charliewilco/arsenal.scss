@@ -76,17 +76,35 @@ blockquote {
     font-style: italic;
     margin: 1rem 0;
     color: $blue;
-    &::after {
-      content: "";
-      width: 5rem;
-      height: 2px;
-      display: block;
-      margin: .5rem 0;
-      background: $blue;
-    }
     p {
         line-height: 1.6;
         font-weight: 300;
         font-size: $baseFontSize + ($baseFontSize/4);
     }
+    cite {
+      color: $litegray;
+      font-style: normal;
+      font-size: $baseFontSize;
+      &::before {
+        content: "";
+        width: 5rem;
+        height: 2px;
+        display: block;
+        margin: .5rem 0;
+        background: $blue;
+      }
+    }
 }
+
+
+// util for type
+
+.caps { text-transform: uppercase; }
+.lower { text-transform: lowercase; }
+.lt-5 { letter-spacing: 5px; }
+.lt-2 { letter-spacing: 2px; }
+
+.center { text-align: center; }
+.left { text-align: left; }
+.right { text-align: right; }
+.justify { text-align: justify;}

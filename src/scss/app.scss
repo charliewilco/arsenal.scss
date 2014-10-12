@@ -1,5 +1,5 @@
-$sans-serif: Myriad Pro, Avenir, Chaparral Pro, Proxima Nova Condensed, Source Sans Pro;
-// $baseFontSize: 1rem;
+$sans-serif: Proxima Nova Condensed, Source Sans Pro, Myriad Pro, Avenir, Chaparral Pro;
+// $baseFontSize: 1.25rem;
 // $transition-duration: 2s;
 
 
@@ -160,6 +160,7 @@ $app-color: $blue;
         content: "$#{"" +nth($color, 1)}";
         color: white;
         font-weight: 300;
+        font-size: .875rem;
         position: absolute;
         top: 0; bottom: 0; left: 0; right: 0;
         padding: .75rem;
@@ -172,4 +173,46 @@ $app-color: $blue;
       }
     }
   }
+}
+
+
+
+.col-1-4 {
+  float: left;
+  width: 23.5%;
+  padding: .5rem;
+  margin-right: 2%;
+  @include respond-to(medium-screens) { width: 50%; margin-right: 0; }
+  @include respond-to(handhelds) { width: 100%; }
+}
+.col-1-4:last-child {
+  margin-right: 0;
+}
+
+.col-2-4 {
+  float: left;
+  width: 49%;
+  padding: .5rem;
+  margin-right: 2%;
+  @include respond-to(medium-screens) { width: 50%; margin-right: 0; }
+  @include respond-to(handhelds) { width: 100%; }
+}
+.col-2-4:last-child {
+  margin-right: 0;
+}
+
+.col-3-4 {
+  float: left;
+  width: 74.5%;
+  padding: .5rem;
+  margin-right: 2%;
+}
+.col-3-4:last-child {
+  margin-right: 0;
+}
+
+.col-4-4 {
+  float: left;
+  padding: .5rem;
+  width: 100%;
 }
