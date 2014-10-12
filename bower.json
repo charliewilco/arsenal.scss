@@ -23,7 +23,7 @@
     "tests",
     "src/scss/app.scss",
     "src/scss/inc/head.html",
-    "src/inc/*.svg"
+    "src/inc/*.svg",
     "src/index.html",
     "src/inc/header.html"
   ],
