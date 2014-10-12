@@ -105,7 +105,20 @@ $app-color: $blue;
   margin: 0 auto;
 }
 
-#mediaobjects, #modals, #colors { text-align: center; }
+#mediaobjects, #modals, #colors, #icons { text-align: center; }
+
+.grid--item {
+  display: inline-block;
+  width: 3rem;
+  height: 2rem;
+  margin: .5rem;
+  svg {
+    max-width: 100%;
+    max-height: 100%;
+    fill: $app-color;
+    overflow: hidden;
+  }
+}
 .item { margin: .5rem; }
 
 .color {
