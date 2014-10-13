@@ -1,0 +1,12 @@
+.teaser {
+	background: $blue;
+	color: white;
+	padding: 5rem .5rem;
+	&--content {
+		margin: 0 auto;
+		max-width: 38rem;
+		p {
+			font-size: $baseFontSize + .5;
+		}
+	}
+}

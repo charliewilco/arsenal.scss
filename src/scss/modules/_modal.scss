@@ -30,14 +30,7 @@
       left: 0;
       margin: auto;
       overflow-y: scroll;
-      @include respond-to(handhelds) {
-        max-height: 100%;
-      }
-      .icon {
-        background: $offwhite;
-        border-radius: 100%;
-        border: 1px solid $blue;
-      }
+      @include respond-to(handhelds) {   max-height: 100%; }
   }
   &--content {
       padding: 1rem;
@@ -50,9 +43,9 @@
   &--close {
       position:absolute;
       display:block;
-      text-indent:px;
       top: 1rem;
       right: 1rem;
       cursor: pointer;
+      width: 1rem;
   }
 }

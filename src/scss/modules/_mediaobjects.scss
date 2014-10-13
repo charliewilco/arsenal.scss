@@ -2,13 +2,19 @@
   position: relative;
   display: inline-block;
   max-width: 21rem;
-  background: rgba(white, .75);
+  background: rgba($offwhite, .75);
   border-radius: .5rem;
 	// box-shadow: 0px 0px .75rem 0 rgba($text, .5);
   &--info {
     padding: 1.5rem;
-
-    &_price { color: rgba($text, .5); }
+    text-align: left;
+    &_price {
+      color: rgba($text, .5);
+      font-weight: 700;
+      font-size: $baseFontSize  + .5;
+      float: right;
+      padding: 0 .5rem;
+    }
   }
 	img {
 		border-radius: .5rem .5rem 0 0;

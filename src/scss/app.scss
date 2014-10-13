@@ -1,4 +1,4 @@
-$sans-serif: Proxima Nova Condensed, Source Sans Pro, Myriad Pro, Avenir, Chaparral Pro;
+$sans-serif: Proxima Nova,Source Sans Pro, Myriad Pro, Avenir, Chaparral Pro, Proxima Nova Condensed;
 // $baseFontSize: 1.25rem;
 // $transition-duration: 2s;
 
@@ -47,6 +47,8 @@ $app-color: $blue;
   .icon {
     width: 3rem;
     height: 3rem;
+    display: inline-block;
+    vertical-align: middle;
   }
 }
 .app--intro {
@@ -105,7 +107,7 @@ $app-color: $blue;
   margin: 0 auto;
 }
 
-#mediaobjects, #modals, #colors, #icons { text-align: center; }
+#mediaobjects, #modals, #colors, #icons, #bullets { text-align: center; }
 
 .grid--item {
   display: inline-block;

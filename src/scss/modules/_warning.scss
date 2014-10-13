@@ -1,17 +1,18 @@
 .warning {
     width: 100%;
-    padding: 1.5rem 1rem;
-    background: rgba($blue, .375);
+    padding: 1rem;
+    background: rgba($blue, .5);
     color: $dark-blue;
     font-weight: 700;
     margin: 1rem 0;
-    border-left: .125rem solid;
+    // border-left: .125rem solid;
     .icon {
-      width: 3rem;
-      height: 3rem;
-      fill: white;
+      width: 2.5rem;
+      height: 2.5rem;
+      fill: currentColor;
       vertical-align: middle;
       display: inline-block;
+      margin-right: 1rem;
     }
     p {
       display: inline-block;
@@ -19,18 +20,15 @@
       @include respond-to(handhelds) { display: inline; }
     }
     &--red {
-        background: rgba($red, .375);
-        //border-color: $dark-red;
+        background: rgba($red, .5);
         color: $dark-red;
     }
     &--yellow {
-        background: rgba($yellow, .375);
-        // border-color: $dark-yellow;
+        background: rgba($yellow, .5);
         color: $dark-yellow;
     }
     &--green {
-        background: rgba($green, .375);
-        // border-color: $dark-green;
+        background: rgba($green, .5);
         color: $dark-green;
     }
 }

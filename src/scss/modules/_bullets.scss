@@ -1,0 +1,12 @@
+.bull {
+	&--icon {
+		display: block;
+		margin: .5rem auto;
+		width: 5rem;
+		fill:  $blue;
+	}
+	display: inline-block;
+	vertical-align: top;
+	max-width: 15rem;
+	padding: .5rem;
+}
