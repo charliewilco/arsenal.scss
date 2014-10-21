@@ -1,16 +1,15 @@
-$sans-serif: Proxima Nova,Source Sans Pro, Myriad Pro, Avenir, Chaparral Pro, Proxima Nova Condensed;
+$sans-serif: Source Sans Pro, Myriad Pro, Proxima Nova Condensed, Avenir, Proxima Nova,  Chaparral Pro;
 // $baseFontSize: 1.25rem;
 // $transition-duration: 2s;
 
-
-
 @import "arsenal";
 
-$app-color: $blue;
+$app-color: $bluegreen;
+$app-color_dark: $dark-bluegreen;
 
 .app--header {
     padding: 1.5rem 0;
-    border-top: .125rem solid $app-color;
+    border-top: .25rem solid $app-color;
     background: rgba($app-color, .75);
     svg {
         max-width: 12.5rem;
@@ -18,9 +17,9 @@ $app-color: $blue;
         width: 100%;
         height: auto;
         float: left;
-        fill: $blue;
+        fill: $app-color;
         transition: fill $transition-duration linear;
-        &:hover { fill: mix($dark-blue, $black); }
+        &:hover { fill: mix($app-color_dark, $black); }
     }
     .container {
         max-width: 93%;
@@ -41,6 +40,7 @@ $app-color: $blue;
     }
     a { color: white; }
 }
+
 .app--footer {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -51,6 +51,7 @@ $app-color: $blue;
     vertical-align: middle;
   }
 }
+
 .app--intro {
     width: 100%;
     background: rgba($app-color, .625);
@@ -87,7 +88,7 @@ $app-color: $blue;
       margin: .5rem auto 2rem;
     }
     &_sub {
-      color: lighten($app-color, 6.25%);
+      color: $text;
       font-weight: 700;
       margin: 1.5rem 0;
       text-align: left !important;
@@ -95,17 +96,14 @@ $app-color: $blue;
         content: "";
         width: 3rem;
         height: .125rem;
-        background: lighten($app-color, 6.25%);
+        background: $text;
         display: block;
         margin: .5rem 0 2rem;
       }
     }
 }
 
-.comment--thread {
-  max-width: 48rem;
-  margin: 0 auto;
-}
+.comment--thread { max-width: 48rem; margin: 0 auto; }
 
 #mediaobjects, #modals, #colors, #icons, #bullets { text-align: center; }
 
@@ -121,6 +119,7 @@ $app-color: $blue;
     overflow: hidden;
   }
 }
+
 .item { margin: .5rem; }
 
 .color {
@@ -177,44 +176,35 @@ $app-color: $blue;
   }
 }
 
-
-
-.col-1-4 {
-  float: left;
-  width: 23.5%;
-  padding: .5rem;
-  margin-right: 2%;
-  @include respond-to(medium-screens) { width: 50%; margin-right: 0; }
-  @include respond-to(handhelds) { width: 100%; }
-}
-.col-1-4:last-child {
-  margin-right: 0;
-}
-
-.col-2-4 {
-  float: left;
-  width: 49%;
-  padding: .5rem;
-  margin-right: 2%;
-  @include respond-to(medium-screens) { width: 50%; margin-right: 0; }
-  @include respond-to(handhelds) { width: 100%; }
-}
-.col-2-4:last-child {
-  margin-right: 0;
-}
-
-.col-3-4 {
-  float: left;
-  width: 74.5%;
-  padding: .5rem;
-  margin-right: 2%;
-}
-.col-3-4:last-child {
-  margin-right: 0;
-}
-
-.col-4-4 {
-  float: left;
-  padding: .5rem;
-  width: 100%;
+.col {
+  &-1-4 {
+    float: left;
+    width: 23.5%;
+    padding: .5rem;
+    margin-right: 2%;
+    @include respond-to(medium-screens) { width: 50%; margin-right: 0; }
+    @include respond-to(handhelds) { width: 100%; }
+    &:last-child { margin-right: 0; }
+  }
+  &-2-4 {
+    float: left;
+    width: 49%;
+    padding: .5rem;
+    margin-right: 2%;
+    @include respond-to(medium-screens) { width: 50%; margin-right: 0; }
+    @include respond-to(handhelds) { width: 100%; }
+    &:last-child { margin-right: 0; }
+  }
+  &-3-4 {
+    float: left;
+    width: 74.5%;
+    padding: .5rem;
+    margin-right: 2%;
+    &:last-child { margin-right: 0; }
+  }
+  &-4-4 {
+    float: left;
+    padding: .5rem;
+    width: 100%;
+  }
 }

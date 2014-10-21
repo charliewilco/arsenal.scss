@@ -1,0 +1,43 @@
+.site--header {
+	background: $bluegreen;
+	padding: .5rem 1rem;
+	.container {
+		margin: 0;
+		padding: 0;
+	}
+	&_logo {
+		margin: 0;
+		float: left;
+		line-height: 1;
+		a {
+			display: block;
+		}
+	}
+	&_actions {
+		float: left;
+	}
+	&_search {
+		display: block;
+		float: left;
+		height: 100%;
+		margin: 0 .5rem;
+		input {
+			display: block;
+			padding: .125rem .5rem;
+			min-height: 100%;
+			background: $dark-bluegreen;
+		}
+	}
+	a {
+		color: white;
+	}
+	.btn {
+		border-color: white;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: .125rem 2rem;
+		&:hover {
+			background: $dark-bluegreen;
+		}
+	}
+}

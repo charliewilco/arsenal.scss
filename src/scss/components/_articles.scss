@@ -5,8 +5,15 @@
 		padding: .5rem;
 	}
 	&--header {
-		&_ctr {
-			text-align: center;
+		padding: 2rem .5rem;
+		&::after {
+			content: "";
+			width: 3rem;
+			height: .125rem;
+			background: $bluegreen;
+			display: block;
+			margin: 1.5rem auto;
 		}
 	}
+	&--meta { color: $litegray; }
 }

@@ -45,10 +45,10 @@
 .btn {
   text-align: center;
   padding: .5rem 2rem;
-  font-weight: 400;
+  font-weight: 300;
   text-decoration: none;
-  border: 2px solid rgba($dark-blue, .5);
-  border-radius: .5rem;
+  border: 1px solid rgba($dark-blue, .5);
+  border-radius: .25rem;
   color: $blue;
   font-size: $baseFontSize + .125rem;
   background: none;
