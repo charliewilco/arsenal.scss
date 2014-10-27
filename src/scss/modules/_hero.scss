@@ -12,12 +12,10 @@
         margin-bottom: 1rem;
      }
      .btn {
-      // display: inline-block;
       color: $offwhite;
       border-color: $offwhite;
       &:focus, &:hover {
-        border-color: $blue;
-        // color: $dark-blue;
+        border-color: $baseColor;
       }
     }
      &--container {

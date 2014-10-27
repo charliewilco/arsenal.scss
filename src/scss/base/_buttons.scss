@@ -44,13 +44,14 @@
 
 .btn {
   text-align: center;
-  padding: .5rem 2rem;
-  font-weight: 300;
+  padding: .75rem 2rem;
+  font-weight: $baseFontWeight;
+  font-size: $baseFontSize;
+  line-height: 1;
   text-decoration: none;
-  border: 1px solid rgba($dark-blue, .5);
+  border: 2px solid rgba($baseColorDark, .5);
   border-radius: .25rem;
-  color: $blue;
-  font-size: $baseFontSize + .125rem;
+  color: $baseColor;
   background: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -69,12 +70,12 @@
     vertical-align: middle;
   }
   .icon { fill: currentColor; }
-  @include respond-to(handhelds) {
+  @include mq(handhelds) {
     display: block;
     margin: .5rem 0;
   }
   &:hover, &:focus {
-    background: $dark-blue;
+    background: $baseColorDark;
     color: $offwhite;
   }
   &--red {

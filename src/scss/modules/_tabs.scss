@@ -14,7 +14,7 @@
         display: block;
         float: left;
         font-size: 1.125rem;
-        @include respond-to(handhelds) {
+        @include mq(handhelds) {
             width: 100%;
             border-radius: 0;
         }
@@ -32,7 +32,7 @@
     &--link-active {
         background: white !important;
         a {
-            color: $blue !important;
+            color: $baseColor !important;
         }
     }
     &--content {

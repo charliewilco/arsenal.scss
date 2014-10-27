@@ -4,7 +4,7 @@ $break-small: 31.25rem;
 $break-medium: 48rem;
 $break-large: 57.75rem;
 
-@mixin respond-to($media) {
+@mixin mq($media) {
   @if $media == handhelds {
     @media only screen and (max-width: $break-small) { @content; }
   }

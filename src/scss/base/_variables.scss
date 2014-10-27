@@ -1,5 +1,4 @@
 // colors
-
 // $blue: #5486a4;
 $offwhite: #f0f0f0;
 $black: #202020;
@@ -22,7 +21,6 @@ $litegray: #bcbcbc;
 // $dark-blue: #337799;
 // $dark-yellow: #f5b300;
 // $dark-green: #5ba221;
-
 $dark-red: darken($red, 6.25%);
 $dark-orange: darken($orange, 6.25%);
 $dark-blue: darken($blue, 6.25%);
@@ -34,7 +32,7 @@ $dark-purple: darken($purple, 12.5%);
 $dark-indigo: darken($indigo, 12.5%);
 $dark-fushia: darken($fushia, 25%);
 
-
+// light colors
 $lt-red: lighten($red, 12.5%);
 $lt-orange: lighten($orange, 12.5%);
 $lt-blue: lighten($blue, 12.5%);
@@ -46,12 +44,15 @@ $lt-purple: lighten($purple, 12.5%);
 $lt-indigo: lighten($indigo, 12.5%);
 $lt-fushia: lighten($fushia, 12.5%);
 
+// base colors
+$baseColor: $bluegreen !default;
+$baseColorDark: $dark-bluegreen !default;
+
 // fonts
 $serif: "Georgia", Times, serif !default;
 $sans-serif: "Helvetica", "Helvetica Neue", "fira-sans", Helvetica, Arial, "Lucida Grande", sans-serif !default;
 $baseFontWeight: 300 !default;
 $baseFontSize: 1rem !default;
-
 
 // sizes
 

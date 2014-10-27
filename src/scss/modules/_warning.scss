@@ -1,8 +1,8 @@
 .warning {
     width: 100%;
     padding: 1rem;
-    background: rgba($blue, .5);
-    color: $dark-blue;
+    background: rgba($baseColor, .5);
+    color: $baseColorDark;
     font-weight: 700;
     margin: 1rem 0;
     // border-left: .125rem solid;
@@ -17,7 +17,7 @@
     p {
       display: inline-block;
       font-size: 1.125rem;
-      @include respond-to(handhelds) { display: inline; }
+      @include mq(handhelds) { display: inline; }
     }
     &--red {
         background: rgba($red, .5);

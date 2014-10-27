@@ -1,31 +1,38 @@
 .site--header {
-	background: $bluegreen;
+	background: $baseColor;
 	padding: .5rem 1rem;
 	.container {
 		margin: 0;
 		padding: 0;
 	}
 	&_logo {
-		margin: 0;
+		margin: 0 2rem 0 0;
 		float: left;
 		line-height: 1;
+		padding: .125rem 0;
 		a {
 			display: block;
 		}
 	}
 	&_actions {
 		float: left;
+		@include mq(handhelds) {
+			width: 100%;
+		}
 	}
 	&_search {
 		display: block;
 		float: left;
 		height: 100%;
 		margin: 0 .5rem;
-		input {
+		input[type='text'] {
 			display: block;
-			padding: .125rem .5rem;
 			min-height: 100%;
-			background: $dark-bluegreen;
+			padding: .5rem .5rem;
+			background: $baseColorDark;
+			color: white;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
 		}
 	}
 	a {
@@ -35,9 +42,9 @@
 		border-color: white;
 		margin-top: 0;
 		margin-bottom: 0;
-		padding: .125rem 2rem;
+		padding: .5rem 1rem;
 		&:hover {
-			background: $dark-bluegreen;
+			background: $baseColorDark;
 		}
 	}
 }
