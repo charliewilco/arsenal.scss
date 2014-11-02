@@ -4,10 +4,19 @@ var gulp         = require('gulp'),
     sourcemaps   = require('gulp-sourcemaps'),
     plumber      = require('gulp-plumber'),
     autoprefixer = require('gulp-autoprefixer'),
-    connect      = require('gulp-connect'),
     concat       = require('gulp-concat'),
     fileinclude  = require('gulp-file-include'),
-    imagemin     = require('gulp-imagemin');
+    imagemin     = require('gulp-imagemin'),
+    browserSync  = require('browser-sync'),
+    reload       = browserSync.reload;
+
+gulp.task('browser-sync', function() {
+    browserSync({
+        server: {
+            baseDir: "build/"
+        }
+    });
+});
 
 gulp.task('scripts', function(){
     gulp.src('src/js/*.js')
@@ -15,7 +24,7 @@ gulp.task('scripts', function(){
         .pipe(uglify())
         .pipe(concat('arsenal.min.js'))
         .pipe(gulp.dest('build/js/'))
-        .pipe(connect.reload());
+        .pipe(reload({stream:true}));
 });
 
 gulp.task('styles', function(){
@@ -26,13 +35,13 @@ gulp.task('styles', function(){
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/css/'))
-        .pipe(connect.reload());
+        .pipe(reload({stream:true}));
 });
 
 gulp.task('html', function () {
   gulp.src('src/*.html')
     .pipe(gulp.dest('build/'))
-    .pipe(connect.reload());
+    .pipe(reload({stream:true}));
 });
 
 gulp.task('fileinclude', function() {
@@ -43,13 +52,7 @@ gulp.task('fileinclude', function() {
       basepath: '@file'
     }))
     .pipe(gulp.dest('build/'))
-    .pipe(connect.reload());
-});
-
-
-
-gulp.task('connect', function() {
-    connect.server({ root: 'build', livereload: true });
+    .pipe(reload({stream:true}));
 });
 
 gulp.task('images', function () {
@@ -58,7 +61,8 @@ gulp.task('images', function () {
             progressive: true,
             svgoPlugins: [{removeViewBox: false}]
         }))
-        .pipe(gulp.dest('build/img/'));
+        .pipe(gulp.dest('build/img/'))
+        .pipe(reload({stream:true}));
 });
 
 gulp.task('watch', function(){
@@ -68,7 +72,7 @@ gulp.task('watch', function(){
     gulp.watch(['src/img/*'], ['images']);
 });
 
-gulp.task('default', ['fileinclude','scripts', 'styles', 'images', 'watch', 'connect']);
+gulp.task('default', ['fileinclude','scripts', 'styles', 'images', 'watch', 'browser-sync']);
 gulp.task('build', ['fileinclude','scripts', 'styles', 'images']);
 
 module.exports = gulp;

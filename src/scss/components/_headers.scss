@@ -37,6 +37,9 @@
 	}
 	a {
 		color: white;
+		&:hover {
+			color: $baseColorDark;
+		}
 	}
 	.btn {
 		border-color: white;
@@ -44,6 +47,7 @@
 		margin-bottom: 0;
 		padding: .5rem 1rem;
 		&:hover {
+			color: white;
 			background: $baseColorDark;
 		}
 	}

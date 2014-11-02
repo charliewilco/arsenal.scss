@@ -1,4 +1,4 @@
-$sans-serif: Avenir, Proxima Nova Condensed, Source Sans Pro, Myriad Pro, Proxima Nova, Chaparral Pro;
+$sans-serif: Proxima Nova, Avenir Next, Tisa Pro, Avenir, Proxima Nova Condensed, Source Sans Pro, Myriad Pro, Chaparral Pro;
 // $baseFontSize: 1.125rem;
 $baseFontWeight: 400;
 $transition-duration: .5s;
@@ -9,8 +9,8 @@ $transition-duration: .5s;
 
 .app--header {
     padding: 1.5rem 0;
-    border-top: .25rem solid $baseColor;
-    background: rgba($baseColor, .75);
+    border-top: .125rem solid $baseColor;
+    // background: rgba($baseColor, .75);
     svg {
         max-width: 12.5rem;
         max-height: 100%;
@@ -38,7 +38,7 @@ $transition-duration: .5s;
         padding: 0 .25rem;
       }
     }
-    a { color: white; }
+    a { color: $baseColor; }
 }
 
 .app--footer {
@@ -54,7 +54,7 @@ $transition-duration: .5s;
 
 .app--intro {
     width: 100%;
-    background: rgba($baseColor, .625);
+    background: rgba($baseColor, .75);
     padding: 1rem;
     color: white;
     h1, h2 { color: $baseColorDark; }
@@ -160,7 +160,7 @@ $transition-duration: .5s;
       &::before {
         content: "$#{"" +nth($color, 1)}";
         color: white;
-        font-weight: 300;
+        font-weight: 400;
         font-size: .875rem;
         position: absolute;
         top: 0; bottom: 0; left: 0; right: 0;
