@@ -1,0 +1,30 @@
+.l-Footer {
+  background: $baseColorDark;
+  color: white;
+  padding: $baseFontSize / 2;
+
+  p,
+  li {
+    font-size: $baseFontSize * .875;
+  }
+
+  &__column {
+    border-top: 1px solid white;
+    padding: 1rem .5rem;
+  }
+
+  &__copy {}
+}
+
+
+.l-Footer__primary {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  .m-Icon {
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

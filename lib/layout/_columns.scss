@@ -1,0 +1,48 @@
+.l-Column {
+  &--1\/4 {
+    float: left;
+    width: 23.5%;
+    padding: .5rem;
+    margin-right: 2%;
+    &:last-child { margin-right: 0; }
+
+    @include mq(medium-screens) {
+      width: 50%;
+      margin-right: 0;
+    }
+
+    @include mq(handhelds) { width: 100%; }
+  }
+
+  &--2\/4 {
+    float: left;
+    width: 49%;
+    padding: .5rem;
+    margin-right: 2%;
+    &:last-child { margin-right: 0; }
+
+    @include mq(medium-screens) {
+      width: 50%;
+      margin-right: 0;
+    }
+
+    @include mq(handhelds) { width: 100%; }
+  }
+
+  &--3\/4 {
+    float: left;
+    width: 74.5%;
+    padding: .5rem;
+    margin-right: 2%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &--4\/4 {
+    float: left;
+    padding: .5rem;
+    width: 100%;
+  }
+}

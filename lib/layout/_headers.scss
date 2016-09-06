@@ -1,0 +1,97 @@
+.l-Header {
+  background: $baseColor;
+  padding: .5rem 1rem;
+
+  .l-Container {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: white;
+    &:hover { color: $baseColorDark; }
+  }
+
+  .m-Btn {
+    border-color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: .5rem 1rem;
+    &:hover {
+      color: white;
+      background: $baseColorDark;
+    }
+  }
+}
+
+.l-Header__logo {
+  margin: 0 2rem 0 0;
+  float: left;
+  line-height: 1;
+  padding: .125rem 0;
+
+  a { display: block; }
+}
+
+.l-Header__actions {
+  float: left;
+  @include mq(handhelds) {
+    width: 100%;
+  }
+}
+
+.l-Header__search {
+  display: block;
+  float: left;
+  height: 100%;
+  margin: 0 .5rem;
+}
+
+.l-Header__search > input[type='text'] {
+  display: block;
+  min-height: 100%;
+  padding: .5rem .5rem;
+  background: $baseColorDark;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.m-Header--primary {
+  padding: 1.5rem 0;
+  border-top: .125rem solid $baseColor;
+  svg {
+    max-width: 12.5rem;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+    float: left;
+    fill: $baseColor;
+    transition: fill $transition-duration linear;
+    &:hover { fill: mix($baseColorDark, $black); }
+  }
+
+  .l-Container {
+    max-width: 93%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    display: block;
+    float: left;
+  }
+
+  &__nav {
+    float: right;
+    ul {list-style: none;}
+    li {
+      display: inline-block;
+      padding: 0 .25rem;
+    }
+  }
+
+  a { color: $baseColor; }
+}

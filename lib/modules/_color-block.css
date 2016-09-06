@@ -1,0 +1,56 @@
+$colors: offwhite $offwhite, black $black, red $red, blue $blue, yellow $yellow, green $green, gray $gray, litegray $litegray, text $text, orange $orange, bluegreen $bluegreen, indigo $indigo, purple $purple, fushia $fushia, ygreen $ygreen, dark-blue $dark-blue, dark-red $dark-red, dark-yellow $dark-yellow, dark-green $dark-green, dark-ygreen $dark-ygreen, dark-bluegreen $dark-bluegreen, dark-orange $dark-orange, dark-indigo $dark-indigo, dark-fushia $dark-fushia, dark-purple $dark-purple, lt-red $lt-red, lt-orange $lt-orange, lt-ygreen $lt-ygreen, lt-green $lt-green, lt-blue $lt-blue, lt-yellow $lt-yellow, lt-bluegreen $lt-bluegreen, lt-indigo $lt-indigo, lt-purple $lt-purple, lt-fushia $lt-fushia;
+
+.m-ColorBlock {
+  &__fill {
+    border-radius: .5rem;
+    width: 8.5rem;
+    height: 3rem;
+    position: relative;
+    @each $color in $colors {
+      &--#{'' +nth($color, 1)} {
+        background: nth($color, 2);
+        &::before {
+          content: '$#{'' +nth($color, 1)}';
+          color: white;
+          font-weight: 400;
+          font-size: .875rem;
+          position: absolute;
+          top: 0; bottom: 0; left: 0; right: 0;
+          padding: .75rem;
+          text-align: center;
+          width: 100%;
+        }
+        &::after {
+          content: '#{nth($color, 2)}';
+          border-top: 1.25rem solid nth($color, 2);
+        }
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      margin: auto;
+      bottom: -1.20rem;
+      left: 0;
+      right: 0;
+      text-indent: -24.5%;
+      text-transform: lowercase;
+      line-height: 2;
+      border-left: 1.25rem solid transparent;
+      border-right: 1.25rem solid transparent;
+      font-weight: 700;
+      font-family: Menlo, monospace;
+    }
+  }
+
+  &__container {
+    display: inline-block;
+    vertical-align: top;
+    margin: .25rem;
+    text-align: center;
+    min-height: 6.5rem;
+  }
+}

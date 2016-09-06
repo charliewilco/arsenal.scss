@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  // overflow: auto;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+  background: white;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+
+.show { display: block; }
+.hidden { display: none; }

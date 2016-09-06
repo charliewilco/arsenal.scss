@@ -1,0 +1,48 @@
+.m-Item {
+  position: relative;
+  display: inline-block;
+  max-width: 21rem;
+  background: rgba($offwhite, .75);
+  border-radius: .5rem;
+  margin: .5rem;
+}
+
+.m-Item img {
+  border-radius: .5rem .5rem 0 0;
+}
+
+.m-Item__info {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.m-Item__info__price {
+  color: rgba($text, .5);
+  font-weight: 700;
+  font-size: $baseFontSize  + .5;
+  float: right;
+  padding: 0 .5rem;
+}
+
+.m-Item__label {
+  border-radius: .25rem;
+  max-width: 10rem;
+  text-align: center;
+  padding: .5rem;
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  background: $yellow;
+  color: darken($dark-yellow, 25%);
+  font-weight: 700;
+}
+
+.m-Item__header { position: relative; }
+
+.m-Item__header__title {
+  margin: 0 0 .5rem;
+  position: absolute;
+  bottom: .5rem;
+  color: white;
+  padding: .5rem;
+}

@@ -1,0 +1,51 @@
+.m-Tabs {
+  list-style: none inside;
+  margin-bottom: -1px;
+  z-index: 5;
+
+  &__marker {
+    padding: 1rem 2.5rem .875rem;
+    border-bottom: none;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: transparent;
+    background: rgba(gray, .375);
+    line-height: 1;
+    font-weight: 400;
+    display: block;
+    float: left;
+    font-size: 1.125rem;
+
+    @include mq(handhelds) { width: 100%; }
+
+    a {
+      text-align: center;
+      text-decoration: none;
+      color: rgba(gray, .75);
+    }
+  }
+
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+
+  &__link.is-active {
+    background: white !important;
+    border-left-color: $baseColor;
+    a {
+      color: $baseColor !important;
+    }
+  }
+
+  &__content {
+    z-index: 4;
+    padding: 2rem;
+    font-size: 1.25rem;
+    border: 1px solid $gray;
+    background: white;
+  }
+
+  &.is-active {}
+}

@@ -1,0 +1,13 @@
+.l-InlineGrid__item {
+  display: inline-block;
+  width: 3rem;
+  height: 2rem;
+  margin: .5rem;
+}
+
+.l-InlineGrid__item svg {
+  max-width: 100%;
+  max-height: 100%;
+  fill: $baseColor;
+  overflow: hidden;
+}

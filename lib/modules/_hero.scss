@@ -1,0 +1,32 @@
+.m-Hero {
+  background: url('../hero-compressed.jpg') no-repeat center bottom / cover;
+  padding: 6rem 1rem;
+  text-align: center;
+  min-height: 25rem;
+  width: 100%;
+  color: $offwhite;
+  min-height: 100%;
+
+  &__headline {
+    font-weight: 700;
+    font-size: $baseFontSize * 4.5;
+    margin-bottom: 1rem;
+  }
+
+  &__container {
+    background: rgba($offwhite, .125);
+    max-width: 40rem;
+    margin: 0 auto;
+    border-radius: .5rem;
+    padding: 3rem 1rem;
+  }
+
+  .m-Btn {
+    color: $offwhite;
+    border-color: $offwhite;
+    &:focus,
+    &:hover {
+      border-color: $baseColor;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.l-Container {
+  margin: .5rem auto;
+  max-width: 68rem;
+  padding: .5rem;
+
+  &::after {
+    @extend %clearfix;
+  }
+
+  &--wide {
+    max-width: 100%;
+    width: 100%;
+    padding: .5rem 0;
+  }
+}
