@@ -1,8 +1,8 @@
 Arsenal
 ---
 
-<a href="https://github.com/charlespeters/VVWIP">
-  <img src="https://unpkg.com/vvwip/IGVP.svg" alt="IGVP" />
+<a href="https://github.com/charlespeters/VVWIP" align="right">
+  <img src="https://unpkg.com/vvwip/IGVP.svg" align="right" alt="IGVP" />
 </a>
 
 Arsenal is an old collection of components, design patterns, generally anything I've found that can be reusable/modifiable/stuff-I-need-a-lot and other stuff I think could be useful. All written in Sass and attempts to comply with SMACSS and BEM with Pascal casing. Compiled with Node Sass.
