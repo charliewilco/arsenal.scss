@@ -4,7 +4,4 @@ bower_components
 *.log
 .DS_Store
 build/
-
-src/inc/header.html
-src/inc/footer.html
-src/inc/*.svg
+dist/
